@@ -59,22 +59,8 @@ nav .navbar-toggler {
     margin-left: auto;
   }
 }
-nav .navbar-toggler .navbar-collapse {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
-nav .navbar-toggler .navbar-collapse.show {
-  opacity: 1;
-}
 nav .navbar-toggler .navbar-toggler-icon {
   background-color: transparent;
-  transition: transform 0.3s ease-in-out;
-}
-nav .navbar-toggler .navbar-toggler-icon.collapsed {
-  transform: rotate(0deg);
-}
-nav .navbar-toggler .navbar-toggler-icon.expanded {
-  transform: rotate(90deg);
 }
 
 .icon-space {
