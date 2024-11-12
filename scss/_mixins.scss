@@ -1,0 +1,38 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin transition($properties...) {
+    transition: $properties 0.3s ease;
+  }
+
+  @mixin bounce-animation {
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  @mixin hover-effect($background: #d1d5db, $color: #333) {
+    &:hover {
+      background-color: $background;
+      color: $color;
+    }
+  }
+  
+  .nav-link {
+    @include hover-effect();
+  }

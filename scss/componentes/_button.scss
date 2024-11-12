@@ -1,0 +1,18 @@
+.btn-primary {
+    background-color: #d1d5db; 
+    color: #333;
+    border-color: #adb5bd; 
+    margin-bottom: 20px;
+
+&:hover {
+
+    background-color:darkred;
+    border: 1px solid black;
+    font-weight:450
+}
+}
+
+.btn-link {
+    font-weight: bold;
+    color: black;
+  }
