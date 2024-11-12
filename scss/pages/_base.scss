@@ -1,0 +1,40 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  h1, h2, h3 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-content {
+    padding: 10px;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  .typing-text {
+    @include typing-text($color: #333, $duration: 3s, $steps: 40);
+  }

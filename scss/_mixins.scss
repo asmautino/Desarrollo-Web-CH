@@ -1,0 +1,89 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin transition($properties...) {
+    transition: $properties 0.3s ease;
+  }
+
+  @mixin bounce-animation {
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  @mixin hover-effect($background: #d1d5db, $color: #333) {
+    &:hover {
+      background-color: $background;
+      color: $color;
+    }
+  }
+  
+  .nav-link {
+    @include hover-effect();
+  }
+
+  @mixin typing-text($color: #333, $duration: 3s, $steps: 40) {
+    color: $color;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    animation: revealText $duration steps($steps, end) 1s 1 normal both;
+  
+    // Cursor animado al final del texto
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: $color;
+      animation: cursorBlink 1s steps(2, end) infinite, hideCursor 0.5s linear calc(#{$duration} + 0s) forwards;
+    }
+  
+    // Keyframes para revelar el texto gradualmente
+    @keyframes revealText {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  
+    // Keyframes para el cursor parpadeante
+    @keyframes cursorBlink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  
+    // Keyframes para ocultar el cursor al finalizar la animación
+    @keyframes hideCursor {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
