@@ -1,0 +1,32 @@
+.index-profile-img {
+    width: 100%;
+    max-width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 40px auto; 
+    display: block;
+}
+  @media (max-width: 768px) {
+    nav {
+      .menu {
+        flex-direction: column;
+  
+        li {
+          margin: 10px 0; // Espacio entre ítems en pantalla pequeña
+        }
+      }
+    }
+
+    .main-content {
+      padding: 10px;
+  
+      h1 {
+        font-size: 1.2rem;
+      }
+  
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }

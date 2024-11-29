@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Home</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angie Mautino - Data Scientist and Full Stack Developer with over 4 years of experience in data analytics, process optimization, and project management.">
+    <meta name="keywords" content="Angie Mautino, Data Scientist, Full Stack Developer, Data Analytics, Project Management">
+    <meta name="author" content="Angie Mautino">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Angie Mautino | Home</title>
+</head>
 <body>
     <header class="bg-light py-3">
-        <nav class="container">
-            <ul class="nav justify-content-center menu">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index.html"><i class="bi bi-house-door icon-space"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/about.html"><i class="bi bi-person icon-space"></i> About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/work.html"><i class="bi bi-briefcase icon-space"></i> Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/studies.html"><i class="bi bi-book icon-space"></i> Studies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/projects.html"><i class="bi bi-code-slash icon-space"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html"><i class="bi bi-envelope icon-space"></i> Contact</a>
-                </li>
-            </ul>
+        <nav class="container-fluid navbar navbar-expand-md navbar-light">
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler d-md-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu desplegable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-center mx-auto menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html"><i class="bi bi-house-door icon-space"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html"><i class="bi bi-person icon-space"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/work.html"><i class="bi bi-briefcase icon-space"></i> Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/studies.html"><i class="bi bi-book icon-space"></i> Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/projects.html"><i class="bi bi-code-slash icon-space"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact.html"><i class="bi bi-envelope icon-space"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main class="container my-5">
         <section class="row align-items-center">
             <article class="col-md-6">
-                <h1 class="fw-bold">Angie Mautino</h1>
-                <p>A passionate Data Scientist and Full Stack Developer with over 4 years of experience.</p>
-                <a href="https://docs.google.com/document/d/1x22wGgqt8Ojwk9dXh-MwmbNuxCce_bcDwEqxA818LrI/edit?usp=sharing" class="btn btn-primary" download>Download CV</a>
+                <h1 class="fw-bold typing-text">Hi! This is <strong>Angie Mautino</strong></h1>
+                <p class="lead">A passionate Data Scientist and Full Stack Developer with over 4 years of experience in data analytics, process optimization, and project management.</p>
+                <a href="https://docs.google.com/document/d/1x22wGgqt8Ojwk9dXh-MwmbNuxCce_bcDwEqxA818LrI/edit?usp=sharing" class="btn btn-primary mt-3" download>Download CV</a>
             </article>
             <article class="col-md-6 text-center">
-                <img src="./img/perfil.jpeg" alt="Presentación de Angie" class="index-profile-img rounded">
+                <img src="./img/perfil.jpeg" alt="Angie Mautino's Profile Picture" class="index-profile-img rounded" loading="lazy">
             </article>
         </section>
+    </main>
     
-    <footer class="text-center py-3">
-        &copy; 2024, Design by Angie Mautino
+    <footer class="bg-light text-center py-3 w-100">
+        <p>&copy; 2024, Design by <strong>Angie Mautino</strong></p>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

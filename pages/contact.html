@@ -1,90 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Angie Mautino, an Industrial Engineer specializing in Data Science and Full Stack Development with over 4 years of experience.">
+    <meta name="keywords" content="Angie Mautino, Data Scientist, Full Stack Developer, Statistics, Data Science, MIT">
+    <meta name="author" content="Angie Mautino">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contact</title>
-
+    <title>About Me - Angie Mautino</title>
 </head>
 <body>
     <header class="bg-light py-3">
-        <nav class="container">
-            <ul class="nav justify-content-center menu">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html"><i class="bi bi-house-door icon-space"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html"><i class="bi bi-person icon-space"></i> About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="work.html"><i class="bi bi-briefcase icon-space"></i> Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="studies.html"><i class="bi bi-book icon-space"></i> Studies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html"><i class="bi bi-code-slash icon-space"></i> Projects</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html"><i class="bi bi-envelope icon-space"></i> Contact</a>
-                </li>
-            </ul>
+        <nav class="container-fluid navbar navbar-expand-md navbar-light">
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler d-md-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu desplegable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-center mx-auto menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="bi bi-house-door icon-space" aria-hidden="true"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html"><i class="bi bi-person icon-space" aria-hidden="true"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html"><i class="bi bi-briefcase icon-space" aria-hidden="true"></i> Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studies.html"><i class="bi bi-book icon-space" aria-hidden="true"></i> Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="bi bi-code-slash icon-space" aria-hidden="true"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html"><i class="bi bi-envelope icon-space" aria-hidden="true"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main class="container contact-container">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h2>Let's work <strong>together</strong>!</h2>
-                <p>I'm here to help if you're seeking a data expert to build end-to-end solutions or a partner to drive your business forward with data-driven insights and scalable models.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7806.184902962944!2d-77.07907689999999!3d-11.968100699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce1629939ac7%3A0xc1a014b78fddca31!2sAv.%20los%20Pr%C3%B3ceres%20de%20Huandoy%202377%2C%20Los%20Olivos%2015306!5e0!3m2!1sen!2spe!4v1727741507657!5m2!1sen!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <main class="container my-5">
+        <section class="row align-items-center my-5">
+            <article class="col-md-8">
+                <div class="text-center text-md-start">
+                    <h1>Hi! This is <strong>Angie Mautino</strong></h1>
+                    <p>Industrial Engineer from the University of Lima, currently pursuing a Micromaster in Statistics and Data Science at MIT. I have 4 years of experience in data analytics, process optimization, and project management in Mining, Supply Chain, and IT sectors. Skilled in building data pipelines, deploying machine learning models, and creating interactive dashboards, I focus on delivering end-to-end data solutions. I thrive in collaborative environments, combining technical expertise with strong communication skills to drive impactful results.</p>
+                </div>
+            </article>
 
-            <!-- Contact Form -->
-            <div class="col-md-6 form-container">
-                <form action="/submit" method="post" enctype="multipart/form-data" class="contact-form">
-                    <div class="mb-3">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" required>
+            <!-- Profile Image -->
+            <article class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="../img/perfil.jpeg" alt="Angie Mautino smiling, in a professional setting" class="profile-rounded-circle">
+                <ul class="list-inline social-media mt-3">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/amautinog/" class="text-dark" aria-label="LinkedIn Profile"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/asmautino" class="text-dark" aria-label="GitHub Profile"><i class="bi bi-github" style="font-size: 2rem;"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:mautino.angie@gmail.com" class="text-dark" aria-label="Email Angie"><i class="bi bi-envelope" style="font-size: 2rem;"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://wa.pe/amautinog" class="text-dark" aria-label="WhatsApp"><i class="bi bi-whatsapp" style="font-size: 2rem;"></i></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="my-5">
+            <article class="row g-4 justify-content-center align-items-stretch">
+                <div class="col-md-3 d-flex">
+                    <div class="border p-4 rounded flex-fill text-center">
+                        <h3 class="fw-bold">Industry Knowledge</h3>
+                        <ul class="list-unstyled">
+                            <li>Big Data Analytics</li>
+                            <li>Business Process</li>
+                            <li>Project Management</li>
+                        </ul>
                     </div>
-                    <div class="mb-3">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="border p-4 rounded flex-fill text-center">
+                        <h3 class="fw-bold">Techniques</h3>
+                        <ul class="list-unstyled">
+                            <li>Data Visualization</li>
+                            <li>ETL</li>
+                            <li>Model Deployment</li>
+                            <li>Containerization (Docker)</li>
+                        </ul>
                     </div>
-                    <div class="mb-3">
-                        <label for="country">Country</label>
-                        <select name="country" id="country" class="form-select">
-                            <option value="peru">Peru</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="chile">Chile</option>
-                            <option value="brazil">Brazil</option>
-                        </select>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="border p-4 rounded flex-fill text-center">
+                        <h3 class="fw-bold">Tools and Software</h3>
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                            <li class="p-3"><i class="fab fa-python icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fab fa-r-project icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fas fa-chart-line icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fas fa-chart-bar icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fas fa-database icon-large" aria-hidden="true"></i> <span class="icon-text">SQL</span></li>
+                            <li class="p-3"><i class="fas fa-database icon-large" aria-hidden="true"></i> <span class="icon-text">MongoDB</span></li>
+                            <li class="p-3"><i class="fab fa-docker icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fas fa-code-branch icon-large" aria-hidden="true"></i></li>
+                            <li class="p-3"><i class="fab fa-github icon-large" aria-hidden="true"></i></li>
+                        </ul>
                     </div>
-                    <div class="mb-3">
-                        <label for="phone">Phone</label>
-                        <input type="text" name="phone" id="phone" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comment">Comment</label>
-                        <textarea name="comment" id="comment" class="form-control"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                
-            </div>
-        </div>
+                </div>
+            </article>
+        </section>
     </main>
-
-    <footer class="text-center py-3">
+    
+    <footer class="bg-light text-center py-3 w-100">
         &copy; 2024, Design by Angie Mautino
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

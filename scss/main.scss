@@ -1,0 +1,21 @@
+// Importar Variables y Mixins Primero
+@use '_variables' as *;
+@use '_mixins' as *;
+
+// Importar Componentes
+@use 'componentes/_navbar' as *;
+@use 'componentes/_footer' as *;
+@use 'componentes/_button' as *;
+@use 'componentes/_cards' as *;
+@use 'componentes/_carousel' as *;
+@use 'componentes/_project-slide' as *;
+
+// Importar Estilos para Páginas Específicas
+@use 'pages/_index' as *;
+@use 'pages/_about' as *;
+@use 'pages/_work' as *;
+@use 'pages/_projects' as *;
+@use 'pages/_contact' as *;
+@use 'pages/_base' as *; 
+
+
