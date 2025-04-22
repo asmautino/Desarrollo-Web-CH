@@ -58,9 +58,32 @@
             <div class="col-md-6 form-container">
             <!-- Simulador interactivo -->
             <div class="mt-5 p-4 border rounded bg-light">
-            <h3 class="mb-3">Does my profile match your company?</h3>
-            <p>Click the button below to answer a brief interactive survey and discover whether what you're looking for aligns with my professional background :D </p>
-            <button onclick="startSimulator()" class="btn btn-outline-dark">Start Survey</button>
+                <h3 class="mb-3">Does my profile match your company?</h3>
+                <p>Fill out this quick survey and discover if my Data Science profile aligns with your current needs.</p>
+            
+                <form id="simulatorForm">
+                <div class="mb-3">
+                    <label for="recruiterName" class="form-label">Your name or company</label>
+                    <input type="text" class="form-control" id="recruiterName" required>
+                </div>
+            
+                <p class="mt-3">Select what you're looking for:</p>
+            
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="Python" id="q1"> <label class="form-check-label" for="q1">Python experience</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="SQL" id="q2"> <label class="form-check-label" for="q2">SQL / Data Analysis</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="Power BI" id="q3"> <label class="form-check-label" for="q3">Power BI / Tableau</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="English" id="q4"> <label class="form-check-label" for="q4">English proficiency</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="Soft Skills" id="q5"> <label class="form-check-label" for="q5">Soft skills (Communication, Analysis)</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="Cloud" id="q6"> <label class="form-check-label" for="q6">Cloud experience (GCP, BigQuery)</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" value="MLOps" id="q7"> <label class="form-check-label" for="q7">Model deployment knowledge (MLOps)</label></div>
+            
+                <button type="submit" class="btn btn-outline-primary mt-3">Evaluate Match</button>
+                </form>
+            
+                <div id="resultContainer" class="alert d-none mt-3" role="alert"></div>
+            
+                <h5 class="mt-4">Previous Matches</h5>
+                <ul id="matchHistory" class="list-group"></ul>
             </div>
                 <form action="/submit" method="post" enctype="multipart/form-data" class="contact-form">
                     <div class="mb-3">
